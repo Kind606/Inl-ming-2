@@ -32,11 +32,11 @@ nav.navbar-1 {
     color: black;
 }
 
-.navbar-1 ul li:hover {
+.navbar-1 ul li:hover, .container a:hover {
     transform: translateY(-3px);
 }
 
-.navbar-1 a:hover {
+.navbar-1 a:hover, .container a:hover {
     color: red;
 }
 
@@ -118,10 +118,81 @@ form h1, .need-acc h2 {
     border: solid 1px black;
     cursor: pointer;
 }
-.btn:hover {
+.btn:hover, .mini-container a:hover {
     color:#5c545493
 }
 /* Här slutar login*/
+/* Här börjar Help*/
+.Help-page {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+.Help-top-img {
+    display: flex;
+    position: relative;
+    margin-top: 100px;
+}
+.Help-top-img img {
+    width: 100%;
+    height: auto;
+}
+.help-search {
+    position: absolute;
+    z-index: 8;
+    top: 0;
+    margin: 50px;
+    padding: 12px;
+    width: 38rem;
+    font-size: 16px;
+    font-weight: 300;
+}
+.Help-vanlig {
+    margin: 60px;
+}
+.mini-container a {
+    border: solid 1px black;
+    font-size: 13px;
+    text-decoration: none;
+    color: #383232;
+    padding: 10px;
+    margin: 15px 15px 15px 0px;
+}
+.Help-vanlig h1 {
+    margin-bottom: 20px;
+}
+.help-container {
+    margin: 0px 60px 0px 60px;
+    display: flex;
+}
+.container {
+    border: solid 1px black;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    margin: 0px 10px 10px 0px;
+    width: 225px;
+    box-shadow: 5px 5px 5px gray;
+}
+.container a {
+    text-decoration: none;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #383232;
+    transition: 250ms;
+    padding: 5px;
+}
+.h2-help {
+    margin-left: 60px;
+    margin-bottom: 30px;
+}
+
+.container h2 {
+    font-size: 20px;
+    font-weight: 900;
+}
+/* Här slutar Help*/
 .footer-items {
     display: flex;
     flex-direction: column;
@@ -135,25 +206,31 @@ form h1, .need-acc h2 {
 .footer-containter ul {
     list-style: none;
 }
+.footer-containter ul li {
+    margin-bottom: 5px;
+}
 .footer-containter h2 {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 600;
     color: #342f2fcc;
+    margin-bottom: 10px;
 }
 .footer-containter a {
-    font-size: 12px;
+    font-size: 15px;
     font-weight: 400;
     color: #383232;
+    text-transform: uppercase;
 }
 .footer-containter a:hover {
     text-decoration: underline;
 }
 .footer-end {
-    margin-top: 40vh;
+    margin-top: 35vh;
     display: flex;
     justify-content: space-between;
     margin-left: 50px;
     margin-right: 50px;
+    margin-bottom: 40px;
 }
 .footer-end-items  p {
     margin-right: 30px;
