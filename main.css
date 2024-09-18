@@ -24,11 +24,14 @@ nav.navbar-1 {
 .navbar-1 ul li {
     list-style: none;
     transition: 250ms;
+    text-decoration: none;
+    transition: 250ms;
+    padding: 10px;
+    color: black;
 }
 .navbar-1 ul li a {
     text-decoration: none;
     transition: 250ms;
-    padding: 10px;
     color: black;
 }
 
@@ -36,7 +39,7 @@ nav.navbar-1 {
     transform: translateY(-3px);
 }
 
-.navbar-1 a:hover, .container a:hover {
+.navbar-1 li:hover, .container a:hover, .navbar-1 li a:hover {
     color: red;
 }
 
@@ -54,20 +57,20 @@ nav.navbar-1 {
 }
 
 .misc a {
-    font-size: 14px;
+    font-size: 16px;
 }
-.links a {
+.links li {
     font-size: 20px;
+    cursor: pointer;
 }
 nav.navbar-2 {
     height: 200px;
     width: 100%;
-    top: 0;
-    display: flex;
+    top: 0;  
     align-items: center;
-    justify-content: space-between;
-    background-color: green;
-    z-index: 11;
+    justify-content: center;
+    background-color: rgb(237, 233, 233);
+    z-index: 10;
     margin-top: 100px;
     display: none;
 }
@@ -81,6 +84,16 @@ nav.navbar-2 {
     list-style: none;
     margin-top: 10px;
 }
+.show {
+    display: flex !important;
+}
+.active-menu {
+    display: flex !important;
+}
+.herr-meny, .Dam-meny, .barn-meny, .beauty-meny, .home-meny {
+    display: none;
+}
+
 /* Här börjar login */
 .main-login {
     margin-top: 200px;
@@ -94,6 +107,7 @@ nav.navbar-2 {
     margin-left: 70px;
 }
 .login-inputs input {
+    font-size: 16px;
     width: 300px;
     margin-top: 30px;
     padding: 10px;
@@ -101,8 +115,8 @@ nav.navbar-2 {
     border-bottom: solid 1px black;
 }
 form h1, .need-acc h2 {
-    font-size: 20px;
-    font-weight: 300;
+    font-size: 22px;
+    font-weight: 500;
 }
 .login a {
     text-decoration: none;
@@ -117,9 +131,11 @@ form h1, .need-acc h2 {
     background-color: white;
     border: solid 1px black;
     cursor: pointer;
+    font-size: 18px;
 }
 .btn:hover, .mini-container a:hover {
-    color:#5c545493
+    color: white;
+    background: rgba(0,0,0,0.5);
 }
 /* Här slutar login*/
 /* Här börjar Help*/
@@ -152,7 +168,8 @@ form h1, .need-acc h2 {
 }
 .mini-container a {
     border: solid 1px black;
-    font-size: 13px;
+    font-size: 14px;
+    font-weight: 600;
     text-decoration: none;
     color: #383232;
     padding: 10px;
@@ -220,9 +237,11 @@ form h1, .need-acc h2 {
     font-weight: 400;
     color: #383232;
     text-transform: uppercase;
+    transition: 250ms;
 }
 .footer-containter a:hover {
     text-decoration: underline;
+    color: red;
 }
 .footer-end {
     margin-top: 35vh;

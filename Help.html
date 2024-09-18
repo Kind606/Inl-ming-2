@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
+    <script src="main.js" defer></script>
     <title>Document</title>
 </head>
 <body>
@@ -13,42 +14,149 @@
                 <a href="index.html"><img src="LogoZara.svg" width="150" height="150" alt="Zara"></a>
             </div>
             <ul class="links">
-                <li><a href="#">Herr</a></li>
-                <li><a href="#">Dam</a></li>
-                <li><a href="#">Barn</a></li>
-                <li><a href="#">Beauty</a></li>
-                <li><a href="#">Home</a></li>
+                <li><a href="javascript:void(0)" onclick="openMenMenu()" class="Menbtn">Herr</a></li>
+                <li><a href="javascript:void(0)" onclick="openFemaleMenu()" class="Femalebtn">Dam</a></li>
+                <li><a href="javascript:void(0)" onclick="openChildMenu()" class="Childbtn">Barn</a></li>
+                <li><a href="javascript:void(0)" onclick="openBeautyMenu()" class="Beautybtn">Beauty</a></li>
+                <li><a href="javascript:void(0)" onclick="openHomeMenu()" class="Homebtn">Home</a></li>
             </ul>
             <ul class="misc">
                 <li><a href="login.html">LOGIN</a></li>
                 <li><a href="Help.html">HELP</a></li>
                 <li><a href="#">SHOPPING BAG (0)</a></li>
+                <li><a href="javascript:void(0)" onclick="openMenMenu()" class="Menbtn">Icon</a></li>
             </ul>
         </nav>
-        <nav class="navbar-2">
-            <div class="nav-container">
-                <h2>Herr saker</h2>
-                <ul class="nav-cont-item">
-                    <li><a href="#">Hej</a></li>
-                    <li><a href="#">Hej</a></li>
-                    <li><a href="#">Hej</a></li>
-                </ul>
+        <nav id="myDropdown" class="navbar-2 ">
+            <div class="herr-meny">
+                <div class="nav-container">
+                    <h2>Herr saker</h2>
+                    <ul class="nav-cont-item">
+                        <li><a href="#">Hej</a></li>
+                        <li><a href="#">Hej</a></li>
+                        <li><a href="#">Hej</a></li>
+                    </ul>
+                </div>
+                <div class="nav-container">
+                    <h2>Herr saker</h2>
+                    <ul class="nav-cont-item">
+                        <li><a href="#">Hej</a></li>
+                        <li><a href="#">Hej</a></li>
+                        <li><a href="#">Hej</a></li>
+                    </ul>
+                </div>
+                <div class="nav-container">
+                    <h2>Herr saker</h2>
+                    <ul class="nav-cont-item">
+                        <li><a href="#">Hej</a></li>
+                        <li><a href="#">Hej</a></li>
+                        <li><a href="#">Hej</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="nav-container">
-                <h2>Herr saker</h2>
-                <ul class="nav-cont-item">
-                    <li><a href="#">Hej</a></li>
-                    <li><a href="#">Hej</a></li>
-                    <li><a href="#">Hej</a></li>
-                </ul>
+            <div class="Dam-meny">
+                <div class="nav-container">
+                    <h2>Dam saker</h2>
+                    <ul class="nav-cont-item">
+                        <li><a href="#">Hej</a></li>
+                        <li><a href="#">Hej</a></li>
+                        <li><a href="#">Hej</a></li>
+                    </ul>
+                </div>
+                <div class="nav-container">
+                    <h2>Dam saker</h2>
+                    <ul class="nav-cont-item">
+                        <li><a href="#">Hej</a></li>
+                        <li><a href="#">Hej</a></li>
+                        <li><a href="#">Hej</a></li>
+                    </ul>
+                </div>
+                <div class="nav-container">
+                    <h2>Dam saker</h2>
+                    <ul class="nav-cont-item">
+                        <li><a href="#">Hej</a></li>
+                        <li><a href="#">Hej</a></li>
+                        <li><a href="#">Hej</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="nav-container">
-                <h2>Herr saker</h2>
-                <ul class="nav-cont-item">
-                    <li><a href="#">Hej</a></li>
-                    <li><a href="#">Hej</a></li>
-                    <li><a href="#">Hej</a></li>
-                </ul>
+            <div class="barn-meny">
+                <div class="nav-container">
+                    <h2>Barn saker</h2>
+                    <ul class="nav-cont-item">
+                        <li><a href="#">Hej</a></li>
+                        <li><a href="#">Hej</a></li>
+                        <li><a href="#">Hej</a></li>
+                    </ul>
+                </div>
+                <div class="nav-container">
+                    <h2>Barn saker</h2>
+                    <ul class="nav-cont-item">
+                        <li><a href="#">Hej</a></li>
+                        <li><a href="#">Hej</a></li>
+                        <li><a href="#">Hej</a></li>
+                    </ul>
+                </div>
+                <div class="nav-container">
+                    <h2>Barn saker</h2>
+                    <ul class="nav-cont-item">
+                        <li><a href="#">Hej</a></li>
+                        <li><a href="#">Hej</a></li>
+                        <li><a href="#">Hej</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="beauty-meny">
+                <div class="nav-container">
+                    <h2>Beauty saker</h2>
+                    <ul class="nav-cont-item">
+                        <li><a href="#">Hej</a></li>
+                        <li><a href="#">Hej</a></li>
+                        <li><a href="#">Hej</a></li>
+                    </ul>
+                </div>
+                <div class="nav-container">
+                    <h2>Beauty saker</h2>
+                    <ul class="nav-cont-item">
+                        <li><a href="#">Hej</a></li>
+                        <li><a href="#">Hej</a></li>
+                        <li><a href="#">Hej</a></li>
+                    </ul>
+                </div>
+                <div class="nav-container">
+                    <h2>Beauty saker</h2>
+                    <ul class="nav-cont-item">
+                        <li><a href="#">Hej</a></li>
+                        <li><a href="#">Hej</a></li>
+                        <li><a href="#">Hej</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="home-meny">
+                <div class="nav-container">
+                    <h2>Home saker</h2>
+                    <ul class="nav-cont-item">
+                        <li><a href="#">Hej</a></li>
+                        <li><a href="#">Hej</a></li>
+                        <li><a href="#">Hej</a></li>
+                    </ul>
+                </div>
+                <div class="nav-container">
+                    <h2>Home saker</h2>
+                    <ul class="nav-cont-item">
+                        <li><a href="#">Hej</a></li>
+                        <li><a href="#">Hej</a></li>
+                        <li><a href="#">Hej</a></li>
+                    </ul>
+                </div>
+                <div class="nav-container">
+                    <h2>Home saker</h2>
+                    <ul class="nav-cont-item">
+                        <li><a href="#">Hej</a></li>
+                        <li><a href="#">Hej</a></li>
+                        <li><a href="#">Hej</a></li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
