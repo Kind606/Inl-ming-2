@@ -17,16 +17,17 @@
             </div>
             <ul class="links hidden-main-links">
                 <li><a href="javascript:void(0)" onclick="openMenMenu()" class="Menbtn">Herr</a></li>
-                <li><a href="javascript:void(0)" onclick="openFemaleMenu()" class="Femalebtn">Dam</a></li>
+                <li><a href="javascript:void(1)" onclick="openFemaleMenu()" class="Femalebtn">Dam</a></li>
                 <li><a href="javascript:void(0)" onclick="openChildMenu()" class="Childbtn">Barn</a></li>
-                <li><a href="javascript:void(0)" onclick="openBeautyMenu()" class="Beautybtn">Beauty</a></li>
+                <li><a href="javascript:void(1)" onclick="openBeautyMenu()" class="Beautybtn">Beauty</a></li>
                 <li><a href="javascript:void(0)" onclick="openHomeMenu()" class="Homebtn">Home</a></li>
             </ul>
             <ul class="misc">
                 <li><a href="login.html" class="hide-item">LOGIN</a></li>
                 <li><a href="Help.html" class="hide-item">HELP</a></li>
                 <li><a href="#" class="hide-item">SHOPPING BAG (0)</a></li>
-                <li><a href="javascript:void(0)" onclick="openHbMenu()"><i class='bx bx-menu bx-md Hbbtn'></i></a></li>
+                <li><a href="javascript:void(0)" onclick="openHbMenu()" role="button" aria-expanded="false"
+                aria-label="meny"><i class='bx bx-menu bx-md Hbbtn' aria-label="Meny-butn"></i></a></li>
             </ul>
         </nav>
         <nav id="myDropdown" class="navbar-2 ">
@@ -189,7 +190,7 @@
     <section class="Help-page">
         <div class="Help-top-img">
             <img src="/assets/images/Zarahelp.jpg" alt="left">
-            <input type="search" placeholder="HUR KAN VI HJÄLPA DIG?" class="help-search">
+            <input type="search" placeholder="HUR KAN VI HJÄLPA DIG?" class="help-search" aria-label="Sökbar">
         </div>
         <div class="Help-vanlig">
             <h1>Vanliga sökningar</h1>

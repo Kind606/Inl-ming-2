@@ -15,20 +15,21 @@
     <header>
         <nav class="navbar-1">
             <div class="logo">
-                <a href="index.html"><img src="/assets/images/LogoZara.svg" width="150" height="150"></a>
+                <a href="#"><img src="/assets/images/LogoZara.svg" width="150" height="150" alt="logo"></a>
             </div>
             <ul class="links hidden-main-links">
-                <li onclick="openMenMenu()" class="Menbtn">Herr</li>
-                <li onclick="openFemaleMenu()" class="Femalebtn">Dam</li>
-                <li onclick="openChildMenu()" class="Childbtn">Barn</li>
-                <li onclick="openBeautyMenu()" class="Beautybtn">Beauty</li>
-                <li onclick="openHomeMenu()" class="Homebtn">Home</li>
+                <li><a href="javascript:void(0)" onclick="openMenMenu()" class="Menbtn">Herr</a></li>
+                <li><a href="javascript:void(1)" onclick="openFemaleMenu()" class="Femalebtn">Dam</a></li>
+                <li><a href="javascript:void(0)" onclick="openChildMenu()" class="Childbtn">Barn</a></li>
+                <li><a href="javascript:void(1)" onclick="openBeautyMenu()" class="Beautybtn">Beauty</a></li>
+                <li><a href="javascript:void(0)" onclick="openHomeMenu()" class="Homebtn">Home</a></li>
             </ul>
             <ul class="misc">
                 <li><a href="login.html" class="hide-item">LOGIN</a></li>
                 <li><a href="Help.html" class="hide-item">HELP</a></li>
                 <li><a href="#" class="hide-item">SHOPPING BAG (0)</a></li>
-                <li><a href="javascript:void(0)" onclick="openHbMenu()"><i class='bx bx-menu bx-md Hbbtn'></i></a></li>
+                <li><a href="javascript:void(0)" onclick="openHbMenu()" role="button" aria-expanded="false"
+                    aria-label="meny"><i class='bx bx-menu bx-md Hbbtn'></i></a></li>
             </ul>
         </nav>
         <nav id="myDropdown" class="navbar-2 ">
