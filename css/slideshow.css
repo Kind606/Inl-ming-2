@@ -1,12 +1,16 @@
 .slideshow {
+    margin-top: 150px;
+    margin-bottom: 100px;
+}
+
+#carouselExampleSlidesOnly {
     margin-left: 25%;
     width: 50%;
     border: 5px solid black;
     border-radius: 15px;
+    transition-duration: 0.5s;
 }
 
-.mySlides {
-    display: none;
-    width: 100%;
+.carousel-inner {
     border-radius: 10px;
 }
