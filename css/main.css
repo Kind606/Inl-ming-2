@@ -39,8 +39,9 @@ nav.navbar-1 {
     transform: translateY(-3px);
 }
 
-.navbar-1 li:hover, .container a:hover, .navbar-1 li a:hover {
+.navbar-1 li:hover, .container a:hover, .navbar-1 li a:hover, .Hbbtn:hover {
     color: red;
+    border-color: red;
 }
 
 .logo {
@@ -62,6 +63,16 @@ nav.navbar-1 {
 .links li {
     font-size: 20px;
     cursor: pointer;
+}
+
+.Hbbtn {
+    border: solid 1px black;
+    padding: 5px;
+    border-radius: 5px;
+    display: none !important;
+}
+.Hbbtn i {
+    font-size: 20px;
 }
 nav.navbar-2 {
     height: 200px;
@@ -90,7 +101,7 @@ nav.navbar-2 {
 .active-menu {
     display: flex !important;
 }
-.herr-meny, .Dam-meny, .barn-meny, .beauty-meny, .home-meny {
+.herr-meny, .Dam-meny, .barn-meny, .beauty-meny, .home-meny, .hb-meny {
     display: none;
 }
 
