@@ -29,7 +29,7 @@ nav.navbar-1 {
     padding: 10px;
     color: black;
 }
-.navbar-1 ul li a {
+.navbar-1 ul li a , .nav-cont-item a {
     text-decoration: none;
     transition: 250ms;
     color: black;
@@ -39,7 +39,7 @@ nav.navbar-1 {
     transform: translateY(-3px);
 }
 
-.navbar-1 li:hover, .container a:hover, .navbar-1 li a:hover, .Hbbtn:hover {
+.navbar-1 li:hover, .container a:hover, .navbar-1 li a:hover, .Hbbtn:hover, .nav-cont-item a:hover {
     color: red;
     border-color: red;
 }
@@ -48,6 +48,10 @@ nav.navbar-1 {
     margin-left: 40px;
     position: absolute;
     left: 0;
+}
+
+.nav-cont-item a {
+    font-size: 25px;
 }
 
 .misc {
@@ -95,6 +99,7 @@ nav.navbar-2 {
     list-style: none;
     margin-top: 10px;
 }
+
 .show {
     display: flex !important;
 }
@@ -114,12 +119,12 @@ nav.navbar-2 {
 .login {
     display: flex;
     flex-direction: column;
-    width: 400px;
+    width: 30%;
     margin-left: 70px;
 }
 .login-inputs input {
     font-size: 16px;
-    width: 300px;
+    width: 90%;
     margin-top: 30px;
     padding: 10px;
     border: none;
@@ -137,12 +142,20 @@ form h1, .need-acc h2 {
 }
 .btn {
     margin-top: 30px;
-    width: 325px;
+    width: 100%;
     padding: 10px;
     background-color: white;
     border: solid 1px black;
     cursor: pointer;
     font-size: 18px;
+}
+
+form {
+    width: 100%;
+}
+.need-acc {
+    width: 30%;
+    margin-left: 20px;
 }
 .btn:hover, .mini-container a:hover {
     color: white;
@@ -190,17 +203,19 @@ form h1, .need-acc h2 {
     margin-bottom: 20px;
 }
 .help-container {
-    margin: 0px 60px 0px 60px;
+    gap: 20px;
+    flex-flow: row wrap;
     display: flex;
+    margin: 0px 60px 20px 60px;
 }
 .container {
     border: solid 1px black;
     padding: 15px;
     display: flex;
     flex-direction: column;
-    height: 200px;
-    margin: 0px 10px 10px 0px;
-    width: 225px;
+    height: 250px;
+    width: calc(25% - 20px);
+    box-sizing: border-box;
     box-shadow: 5px 5px 5px gray;
 }
 .container a {
@@ -264,4 +279,93 @@ form h1, .need-acc h2 {
 }
 .footer-end-items  p {
     margin-right: 30px;
+}
+
+@media screen and (max-width:1018px) {
+
+    .mini-container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+
+@media screen and (max-width:970px) {
+
+    .hide-item {
+        display: none !important;
+    }
+    
+    .Hbbtn {
+        display: flex !important;
+    }
+
+    .help-search {
+        width: 70%;
+    }
+
+    .help-container {
+        gap: 10px;
+        flex-flow: row wrap;
+    }
+    .container {
+        margin: 0;
+        width: calc(50% - 10px);
+        box-sizing: border-box;
+    }
+
+    .footer-links, .footer-end {
+        flex-direction: column;
+    }
+    .footer-containter {
+        margin-bottom: 20px;
+    }
+    .footer-end {
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        flex-direction: column;
+    }
+
+    .main-login {
+        margin-left: 30px;
+    }
+    .login, .need-acc {
+        margin-left: 0;
+        width: 45%;
+    }
+}
+
+@media screen and (max-width:767px) {
+
+    .hidden-main-links {
+        display: none !important;
+    }
+
+
+    .show, .active-menu, .hb-meny {
+        flex-direction: column;
+        height: 200vh !important;
+    }
+    .main-login {
+        margin-left: 30px;
+        flex-direction: column;
+    }
+    .login, .need-acc {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:567px) {
+
+    .container {
+        width: calc(100% - 10px);
+    }
+
+    .footer-end-items {
+        align-items: center;
+        flex-direction: column;
+    }
+
 }
