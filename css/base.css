@@ -1,4 +1,18 @@
 h3 {
   background-color: navy;
   color: yellow;
+}
+
+.help-container {
+  gap: 20px;
+  flex-flow: row wrap;
+  display: flex;
+  margin: 0px 60px 20px 60px;
+}
+
+.help-container {
+  gap: 20px;
+  flex-flow: row wrap;
+  display: flex;
+  margin: 0px 60px 20px 60px;
 }/*# sourceMappingURL=base.css.map */
