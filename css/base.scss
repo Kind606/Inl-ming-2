@@ -5,7 +5,7 @@ $footerColorH2: #342F2FCC;
 $footerColorP: #383232;
 
 @mixin allRights {
-  $font-family: $font-family;
+  font-family: $font-family;
   font-size: $footerP;
   color: $footerColorP;
 }
@@ -14,21 +14,12 @@ $footerColorP: #383232;
       @include allRights;
 }
 
-h3 {
-    background-color: navy;
-    color: yellow;
+@mixin footerHeadings {
+  font-family: $font-family;
+  font-size: $footerH2;
+  color: $footerColorH2;
 }
 
-.help-container {
-  gap: 20px;
-    flex-flow: row wrap;
-    display: flex;
-    margin: 0px 60px 20px 60px;
-}
-  
-.help-container {
-  gap: 20px;
-  flex-flow: row wrap;
-  display: flex;
-  margin: 0px 60px 20px 60px;
+.footerH {
+  @include footerHeadings;
 }
