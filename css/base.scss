@@ -1,3 +1,19 @@
+$font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+$footerH2: 20px;
+$footerP: 16px;
+$footerColorH2: #342F2FCC
+$footerColorP: #383232;
+
+@mixin allRights {
+  $font-family: $font-family;
+  font-size: $footerP;
+  color: $footerColorP;
+  }
+  
+  .footer-end-items {
+      @include allRights;
+    }
+
 h3 {
     background-color: navy;
     color: yellow;
