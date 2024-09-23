@@ -1,5 +1,45 @@
-@import url('/css/slideshow.css');
-@import url('/css/base.css');
+@import url(/css/slideshow.css);
+@import url(/css/base.css);
+
+.navbar-1 ul,
+nav.navbar-1 {
+    display: flex;
+}
+
+.nav-cont-item a,
+.navbar-1 ul li,
+.navbar-1 ul li a {
+    text-decoration: none;
+    color: #000;
+    transition: 250ms;
+}
+
+.logo,
+.misc {
+    position: absolute;
+}
+
+nav.navbar-1,
+nav.navbar-2 {
+    width: 100%;
+    z-index: 10;
+    top: 0;
+}
+
+.links li,
+.nav-container {
+    text-transform: uppercase;
+}
+
+.btn,
+nav.navbar-1 {
+    background-color: #fff;
+}
+
+.btn,
+.links li {
+    cursor: pointer;
+}
 
 * {
     margin: 0;
@@ -13,59 +53,52 @@ nav {
 
 nav.navbar-1 {
     height: 100px;
-    width: 100%;
-    top: 0;
-    display: flex;
     align-items: center;
     justify-content: center;
-    background-color: white;
-    z-index: 10;
-}
-
-.navbar-1 ul {
-    display: flex;
 }
 
 .navbar-1 ul li {
     list-style: none;
-    transition: 250ms;
-    text-decoration: none;
-    transition: 250ms;
     padding: 10px;
-    color: black;
 }
 
-.navbar-1 ul li a , .nav-cont-item a {
+.container a,
+.login a,
+.mini-container a {
     text-decoration: none;
-    transition: 250ms;
-    color: black;
+    color: #383232;
 }
 
-.navbar-1 ul li:hover, .container a:hover {
+.container a:hover,
+.navbar-1 ul li:hover {
     transform: translateY(-3px);
 }
 
-.navbar-1 li:hover, .container a:hover, .navbar-1 li a:hover, .Hbbtn:hover, .nav-cont-item a:hover {
+.Hbbtn:hover,
+.container a:hover,
+.nav-cont-item a:hover,
+.navbar-1 li a:hover,
+.navbar-1 li:hover {
     color: red;
     border-color: red;
 }
 
-.ol, ul {
+.ol,
+ul {
     padding-left: 0;
 }
 
 .logo {
     margin-left: 40px;
-    position: absolute;
     left: 0;
 }
 
+.Hbbtn i,
 .nav-cont-item a {
     font-size: 20px;
 }
 
 .misc {
-    position: absolute;
     right: 0;
     top: 0;
     margin-top: 10px;
@@ -77,39 +110,35 @@ nav.navbar-1 {
 
 .links li {
     font-size: 20px;
-    cursor: pointer;
-    text-transform: uppercase;
 }
 
 .Hbbtn {
-    border: solid 1px black;
+    border: 1px solid #000;
     padding: 5px;
     border-radius: 5px;
     display: none !important;
 }
 
-.Hbbtn i {
-    font-size: 20px;
-}
-
 nav.navbar-2 {
     height: 200px;
-    width: 100%;
-    top: 0;  
     align-items: center;
     justify-content: center;
-    background-color: rgb(237, 233, 233);
-    z-index: 10;
+    background-color: #ede9e9;
     margin-top: 100px;
     display: none;
 }
 
-.nav-container {
-    margin: 80px;
-    text-transform: uppercase;
+.Help-page,
+.login {
+    flex-direction: column;
 }
 
-.nav-container a, .footer-containter a {
+.nav-container {
+    margin: 80px;
+}
+
+.footer-containter a,
+.nav-container a {
     text-decoration: none;
 }
 
@@ -119,26 +148,34 @@ nav.navbar-2 {
     margin-left: 0 !important;
 }
 
+.active-menu,
 .show {
     display: flex !important;
 }
-.active-menu {
-    display: flex !important;
-}
-.herr-meny, .Dam-meny, .barn-meny, .beauty-meny, .home-meny, .hb-meny {
+
+.Dam-meny,
+.barn-meny,
+.beauty-meny,
+.hb-meny,
+.herr-meny,
+.home-meny {
     display: none;
 }
 
-/* Här börjar login */
 .main-login {
     margin-top: 200px;
     display: flex;
     margin-bottom: 250px;
 }
-/* Hej */
+
+.btn,
+.login-inputs input {
+    margin-top: 30px;
+    padding: 10px;
+}
+
 .login {
     display: flex;
-    flex-direction: column;
     width: 30%;
     margin-left: 70px;
 }
@@ -146,36 +183,34 @@ nav.navbar-2 {
 .login-inputs input {
     font-size: 16px;
     width: 90%;
-    margin-top: 30px;
-    padding: 10px;
     border: none;
-    border-bottom: solid 1px black;
+    border-bottom: 1px solid #000;
 }
 
-form h1, .need-acc h2 {
+.btn,
+form {
+    width: 100%;
+}
+
+.btn,
+.container,
+.mini-container a {
+    border: 1px solid #000;
+}
+
+.need-acc h2,
+form h1 {
     font-size: 22px;
     font-weight: 500;
 }
 
 .login a {
-    text-decoration: none;
-    color: #383232;
     margin-top: 10px;
     margin-bottom: 50px;
 }
 
 .btn {
-    margin-top: 30px;
-    width: 100%;
-    padding: 10px;
-    background-color: white;
-    border: solid 1px black;
-    cursor: pointer;
     font-size: 18px;
-}
-
-form {
-    width: 100%;
 }
 
 .need-acc {
@@ -183,16 +218,14 @@ form {
     margin-left: 20px;
 }
 
-.btn:hover, .mini-container a:hover {
-    color: white;
-    background: rgba(0,0,0,0.5);
+.btn:hover,
+.mini-container a:hover {
+    color: #fff;
+    background: rgba(0, 0, 0, .5);
 }
 
-/* Här slutar login*/
-/* Här börjar Help*/
 .Help-page {
     display: flex;
-    flex-direction: column;
     margin-bottom: 100px;
 }
 
@@ -223,19 +256,13 @@ form {
 }
 
 .mini-container a {
-    border: solid 1px black;
     font-size: 14px;
     font-weight: 600;
-    text-decoration: none;
-    color: #383232;
     padding: 10px;
-    margin: 15px 15px 15px 0px;
+    margin: 15px 15px 15px 0;
 }
 
-
-
 .container {
-    border: solid 1px black;
     padding: 15px;
     display: flex;
     flex-direction: column;
@@ -246,10 +273,8 @@ form {
 }
 
 .container a {
-    text-decoration: none;
     margin-top: 10px;
     font-size: 13px;
-    color: #383232;
     transition: 250ms;
     padding: 5px;
 }
@@ -264,10 +289,7 @@ form {
     font-weight: 900;
 }
 
-/* Här slutar Help*/
-
 @media screen and (max-width:1018px) {
-
     .mini-container {
         display: flex;
         flex-direction: column;
@@ -276,11 +298,10 @@ form {
 }
 
 @media screen and (max-width:970px) {
-
     .hide-item {
         display: none !important;
     }
-    
+
     .Hbbtn {
         display: flex !important;
     }
@@ -300,7 +321,8 @@ form {
         box-sizing: border-box;
     }
 
-    .footer-links, .footer-end {
+    .footer-end,
+    .footer-links {
         flex-direction: column;
     }
 
@@ -319,19 +341,21 @@ form {
         margin-left: 30px;
     }
 
-    .login, .need-acc {
+    .login,
+    .need-acc {
         margin-left: 0;
         width: 45%;
     }
 }
 
 @media screen and (max-width:767px) {
-
     .hidden-main-links {
         display: none !important;
     }
 
-    .show, .active-menu, .hb-meny {
+    .active-menu,
+    .hb-meny,
+    .show {
         flex-direction: column;
         height: 200vh !important;
     }
@@ -341,18 +365,18 @@ form {
         flex-direction: column;
     }
 
-    .login, .need-acc {
+    .login,
+    .need-acc {
         width: 80%;
     }
 
-     #carouselExampleSlidesOnly {
+    #carouselExampleSlidesOnly {
         width: 100%;
         margin: 0;
     }
 }
 
 @media screen and (max-width:567px) {
-
     .container {
         width: calc(100% - 10px);
     }
