@@ -255,6 +255,10 @@ form h1 {
     margin: 60px;
 }
 
+.Help-vanlig h1 {
+    margin-bottom: 15px;
+}
+
 .mini-container a {
     font-size: 14px;
     font-weight: 600;
@@ -356,8 +360,8 @@ form h1 {
     .active-menu,
     .hb-meny,
     .show {
+        height: 110vh !important;
         flex-direction: column;
-        height: 200vh !important;
     }
 
     .main-login {
