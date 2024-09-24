@@ -153,6 +153,10 @@ nav.navbar-2 {
     display: flex !important;
 }
 
+.hidden-mobile {
+    display: none;
+}
+
 .Dam-meny,
 .barn-meny,
 .beauty-meny,
@@ -362,6 +366,10 @@ form h1 {
     .show {
         height: 110vh !important;
         flex-direction: column;
+    }
+
+    .hidden-mobile {
+        display: flex;
     }
 
     .main-login {
