@@ -228,41 +228,6 @@ form h1 {
     background: rgba(0, 0, 0, .5);
 }
 
-.Help-page {
-    display: flex;
-    margin-bottom: 100px;
-}
-
-.Help-top-img {
-    display: flex;
-    position: relative;
-    margin-top: 100px;
-}
-
-.Help-top-img img {
-    width: 100%;
-    height: auto;
-}
-
-.help-search {
-    position: absolute;
-    z-index: 8;
-    top: 0;
-    margin: 50px;
-    padding: 12px;
-    width: 38rem;
-    font-size: 16px;
-    font-weight: 300;
-}
-
-.Help-vanlig {
-    margin: 60px;
-}
-
-.Help-vanlig h1 {
-    margin-bottom: 15px;
-}
-
 .mini-container a {
     font-size: 14px;
     font-weight: 600;

@@ -1,3 +1,36 @@
+.Help-page {
+  display: flex;
+  margin-bottom: 100px;
+}
+
+.Help-top-img {
+  display: flex;
+  position: relative;
+  margin-top: 100px;
+}
+.Help-top-img img {
+  width: 100%;
+  height: auto;
+}
+
+.help-search {
+  position: absolute;
+  z-index: 8;
+  top: 0;
+  margin: 50px;
+  padding: 12px;
+  width: 38rem;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.Help-vanlig {
+  margin: 60px;
+}
+.Help-vanlig h1 {
+  margin-bottom: 15px;
+}
+
 h3 {
   background-color: navy;
   color: yellow;
@@ -8,9 +41,6 @@ h3 {
   flex-flow: row wrap;
   display: flex;
   margin: 0px 60px 20px 60px;
-}
-
-.help-container {
   gap: 20px;
   flex-flow: row wrap;
   display: flex;
@@ -22,29 +52,32 @@ h3 {
   flex-direction: column;
 }
 
-.footer-links, .footer-end-items {
+.footer-links {
   display: flex;
+}
+
+.footer-end-items {
+  display: flex;
+}
+.footer-end-items p {
+  margin-right: 30px;
 }
 
 .footer-containter {
   margin-left: 50px;
 }
-
 .footer-containter ul {
   list-style: none;
 }
-
 .footer-containter ul li {
   margin-bottom: 5px;
 }
-
 .footer-containter h2 {
   font-size: 20px;
   font-weight: 600;
   color: rgba(52, 47, 47, 0.8);
   margin-bottom: 10px;
 }
-
 .footer-containter a {
   font-size: 15px;
   font-weight: 400;
@@ -52,7 +85,6 @@ h3 {
   text-transform: uppercase;
   transition: 250ms;
 }
-
 .footer-containter a:hover {
   text-decoration: underline;
   color: red;
@@ -65,8 +97,4 @@ h3 {
   margin-left: 50px;
   margin-right: 50px;
   margin-bottom: 40px;
-}
-
-.footer-end-items p {
-  margin-right: 30px;
 }/*# sourceMappingURL=base.css.map */
