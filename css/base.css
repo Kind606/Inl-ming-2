@@ -1,3 +1,27 @@
+.Hbbtn:hover {
+  color: red;
+  border-color: red;
+}
+
+.container a:hover {
+  color: red;
+  border-color: red;
+}
+
+.nav-cont-item a:hover {
+  color: red;
+  border-color: red;
+}
+
+.navbar-1 li a:hover {
+  color: red;
+  border-color: red;
+}
+.navbar-1 li:hover {
+  color: red;
+  border-color: red;
+}
+
 .Help-page {
   display: flex;
   margin-bottom: 100px;
@@ -31,9 +55,40 @@
   margin-bottom: 15px;
 }
 
+.main-login {
+  margin-top: 200px;
+  display: flex;
+  margin-bottom: 250px;
+}
+
+.btn {
+  margin-top: 30px;
+  padding: 10px;
+  width: 100%;
+}
+
+.login-inputs input {
+  margin-top: 30px;
+  padding: 10px;
+  font-size: 16px;
+  width: 90%;
+  border: none;
+  border-bottom: 1px solid #000;
+}
+
+.login {
+  display: flex;
+  width: 30%;
+  margin-left: 70px;
+}
+
+form {
+  width: 100%;
+}
+
 h3 {
   background-color: navy;
-  color: yellow;
+  color: red;
 }
 
 .help-container {

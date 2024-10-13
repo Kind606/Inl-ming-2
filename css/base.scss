@@ -4,6 +4,46 @@ $color_3: #383232;
 $color_4: red;
 $background-color_1: navy;
 
+$color_1: red;
+$border-color_1: red;
+
+.Hbbtn {
+	&:hover {
+		color: $color_1;
+		border-color: $border-color_1;
+	}
+}
+.container {
+	a {
+		&:hover {
+			color: $color_1;
+			border-color: $border-color_1;
+		}
+	}
+}
+.nav-cont-item {
+	a {
+		&:hover {
+			color: $color_1;
+			border-color: $border-color_1;
+		}
+	}
+}
+.navbar-1 {
+	li {
+		a {
+			&:hover {
+				color: $color_1;
+				border-color: $border-color_1;
+			}
+		}
+		&:hover {
+			color: $color_1;
+			border-color: $border-color_1;
+		}
+	}
+}
+
 .Help-page {
 	display: flex;
 	margin-bottom: 100px;
@@ -33,6 +73,36 @@ $background-color_1: navy;
 		margin-bottom: 15px;
 	}
 }
+
+.main-login {
+	margin-top: 200px;
+	display: flex;
+	margin-bottom: 250px;
+}
+.btn {
+	margin-top: 30px;
+	padding: 10px;
+	width: 100%;
+}
+.login-inputs {
+	input {
+		margin-top: 30px;
+		padding: 10px;
+		font-size: 16px;
+		width: 90%;
+		border: none;
+		border-bottom: 1px solid #000;
+	}
+}
+.login {
+	display: flex;
+	width: 30%;
+	margin-left: 70px;
+}
+form {
+	width: 100%;
+}
+
 
 h3 {
 	background-color: $background-color_1;
